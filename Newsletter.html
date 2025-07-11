@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="justify-center bg-gray-200">
+    <div class="w-4xl mx-auto bg-white p-6 mt-10 rounded-3xl shadow-lg">
+        <div class="container flex flex-col-reverse items-center justify-between md:flex-row">
+            <div class="flex flex-col mx-auto items-start w-1/2">
+                <div class="flex flex-col items-start p-6 gap-2">
+                    <h1 class="text-4xl font-sans font-bold">Stay updated!</h1>
+                    <p class="text-sm font-sans mt-4">Join 60,000+ product managers receiving monthly updates on:</p>
+                    <ul class="mt-4 space-y-4">
+                        <li class="text-sm font-sans flex gap-4"> <img src="/images/icon-list.svg" alt="">Product discovery and building what matters</li>
+                        <li class="text-sm font-sans flex  gap-4"><img src="/images/icon-list.svg" alt="">Measuring to ensure updates are a success</li>
+                        <li class="text-sm font-sans flex  gap-4"><img src="/images/icon-list.svg" alt="">And much more!</li>
+                    </ul>
+                </div>
+                <div class="w-full p-6">
+                   <form class="space-y-4">
+                    <div class="flex flex-col mb-2">
+                        <div id="errorBox" class="error-box items-end"></div>
+                         <label for="email" class="font-light items-start">Email Address</label>
+                    </div>
+                     <input type="email" id="email" name="email" class="w-full p-3 border-1 rounded-md" placeholder="1234@gmail.com" required>
+                     <button type="submit" id="submit" class="w-full p-3 border-1 rounded-md bg-green-600 hover:bg-green-800">Subscribe to monthly newsletter</button>
+                   </form>
+                </div>
+            
+            </div>
+
+            <div class="flex flex-col mx-auto h-fit w-1/2">
+                <img src="/images/illustration-sign-up-desktop.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w-sm mx-auto bg-white p-12 mt-10 rounded-3xl shadow-lg space-y-6 hidden" id="successBox">
+        <img src="/images/icon-success.svg" alt="successful subscription">
+        <h1 class="text-5xl font-sans font-bold mt-4">Thanks for subscribing!</h1>
+        <p>A confirmation email has been sent to <span id="userEmail" class="font-bold"></span>. Please open it and click the button inside to confirm your subscriptions.</p>
+         <button type="submit" id="submit" class="w-full p-3 border-1 rounded-md bg-green-600 hover:bg-green-800">Dismiss Message</button>
+    </div>
+    <script src="./Newsletter.js"></script>
+</body>
+</html>
